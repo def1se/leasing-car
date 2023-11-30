@@ -1,0 +1,431 @@
+html{
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+html,
+body{
+  height: 100vh; /* это нужно для задействия всей высоты сайта */
+}
+
+.section-title{
+  font-size: 48px;
+  font-weight: 700;
+  color: #151515;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.wrapper{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.container{
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+body{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Edu TAS Beginner', cursive;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.3;
+
+}
+.header{
+  background-color: #151515;
+}
+.header-main{
+  background-color: transparent;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+}
+.header__inner{
+  padding-top: 40px;
+  padding-bottom: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.menu__list{
+  display: flex;
+  gap: 35px;
+}
+.menu__list-link{
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.menu__list-link--active{
+  color: #06F;
+}
+
+.footer{
+  background-color: #151515;
+  padding: 50px 0 32px;
+  color: #fff;
+}
+.footer a{
+  color: #fff;
+}
+.footer__menu{
+  display: flex;
+  justify-content: space-around
+}
+.footer__menu-list{
+  max-width: 225px;
+  word-wrap: break-word; /* нужно для того, чтобы текст переносился в пределах максимальной ширины блока*/
+}
+ul.footer__menu-title{
+  padding-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.footer__menu-item + .footer__menu-item{ /* св-во применяется к элементу после +, и не применяется к элементу перед ним(с его помощью можно сделать расстояние между элементами) */
+  padding-top: 20px;
+}
+.app{
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.footer__copy{
+  max-width: 806px;
+  text-align: center;
+  margin: 0 auto 30px;
+  font-size: 12px;
+}
+.copy__nav-list{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.main{
+  flex-grow: 1; /* позволяет растянуть определенный элемент среди всех элементов так, что страница будет заполнена этими элементами полностью(но растянут будет только один элемент) */
+}
+
+
+.top{
+  color: #fff;
+  text-align: center;
+  margin-top: 250px;
+  margin-bottom: 50px;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+}
+.title{
+  margin-bottom: 38px;
+  font-size: 96px;
+  font-weight: 700;
+}
+.top__link{
+  color: #fff;
+  background-color: #151515;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.swiper-slide{
+  height: 100vh;
+  background-repeat: no-repeat; /* если большой монитор, чтобы не повторялась */
+  background-size: cover; /* чтобы заполняла пространство; растягивалась, если нужно*/
+  background-position: center;
+}
+.swiper-pagination-bullet{
+  width: 120px;
+  height: 3px;
+  background-color: #151515;
+  border-radius: 0;
+  opacity: 1;
+  margin: 0 15px !important;
+}
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: 40px;
+}
+.swiper-pagination-bullet-active{
+  height: 6px;
+  background-color: #fff;
+}
+
+.why__lease{
+  padding: 150px 0;
+}
+.why__lease-list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+.why__lease-item-title{
+  padding: 30px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+.why__lease-item-text{
+  text-align: left;
+}
+
+.how__does{
+  margin-bottom: 150px;
+}
+.how__does-inner{
+  max-width: 600px;
+  margin: 0 auto;
+}
+.how__does-title{
+  padding: 50px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+.how__does-list{
+  display: grid;
+  gap: 40px;
+  margin: 0 0 70px 70px;
+}
+.how__does-item{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.how__does-item-text{
+  display: flex;
+  align-items: center;
+}
+.video{
+  text-align: center;
+  padding-bottom: 150px;
+}
+.video-title{
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.video-info{
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+
+
+.important-title{
+  margin-bottom: 20px;
+}
+.important-text{
+  max-width: 580px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.important__list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.important__item-text{
+  padding: 20px 0 170px;
+  max-width: 270px;
+}
+
+.contacts{
+  margin: 100px 0 150px;
+}
+.contacts__title{
+  margin-bottom: 20px;
+}
+.contacts__text{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  padding: 0 100px;
+  text-align: center;
+}
+
+.form{
+  max-width: 580px;
+  margin: 0 auto;
+}
+.form__input{
+  width: 270px;
+  padding: 18px 20px;
+  border: 1px solid #0066FF;
+  margin-bottom: 50px;
+  display: inline-block;
+  color: #151515;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Edu TAS Beginner', cursive;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.3;
+}
+
+.valid{
+  border: 1px solid green;
+}
+.unvalid{
+  border: 1px solid red;
+}
+.form__input::placeholder, .form__textarea::placeholder{
+  opacity: 0.5;
+  color: #151515;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Edu TAS Beginner', cursive;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.3;
+}
+.form__input + .form__input{
+  margin-left: 35px;
+}
+.form__textarea{
+  width: 100%;
+  border: 1px solid #0066FF;
+  padding: 28px 20px;
+  height: 290px;
+  margin-bottom: 50px;
+  color: #151515;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Edu TAS Beginner', cursive;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.3;
+  resize: none; /* уберет возможность увеличивать textarea(убирает регулировачный уголок) */
+}
+.form__btn{
+  padding: 13px 61px;
+  color: #fff;
+  background-color: #151515;
+  display: block; /* по умолчанию кнопка является inline-block */
+  margin: 0 auto; /* для display: inline-block не работает(если бы был display: flex у родителя, то margin: 0 auto сработал бы) */
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.3;
+  cursor: pointer;
+}
+
+.blog{
+  margin-bottom: 150px;
+}
+.blog__items{
+  display: flex;
+  gap: 40px;
+  margin-bottom: 70px;
+}
+.blog__item{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blog__item-img{
+  padding-bottom: 30px;
+}
+.blog__item-title{
+  flex-basis: 446px; /* аналог ширины, но для flex'ов */
+  color: #151515;
+  font-size: 24px;
+  font-weight: 700;
+}
+.blog__item-btn{
+  padding: 4px 10px;
+  background-color: #06F;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.3;
+  border: none;
+  cursor: pointer;
+}
+.show-link{
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  width: 225px;
+  display: block;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.3;
+  color: #FFF;
+  background-color: #151515;
+  padding: 13px 61px;
+  border-radius: 5px;
+}
+
+.choose{
+  padding: 100px 0 150px;
+}
+.tabs__btn{
+  padding: 0 140px;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+.tabs__btn-item{
+  color: #151515;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  background: transparent;
+  border: none;
+  padding-bottom: 100px;
+  cursor: pointer;
+}
+.tabs__btn-item--active{
+  color: #06F;
+}
+.tabs__content-item{
+  display: none;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px 40px;
+  padding-bottom: 70px;
+}
+
+.tabs__content-item.tabs__content-item--active{
+  display: grid;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  border: 1px solid #06F;
+  border-radius: 2px;
+}
+.card__title{
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 5px;
+}
+.card__text{
+  padding: 0 5px;
+}
+.card__price{
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 5px;
+}
+.card__link{
+  border: 1px solid #06F;
+  color: #06F;
+  padding: 0 5px;
+}

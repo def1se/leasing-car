@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;500&family=Inter:wght@500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="" class="logo__img">
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item"><a href="new-cars.html" class="menu__list-link">НОВЫЕ АВТОМОБИЛИ</a></li>
+              <li class="menu__list-item"><a href="#" class="menu__list-link">Б/У АВТОМОБИЛИ</a></li>
+              <li class="menu__list-item"><a href="#" class="menu__list-link">ФИНАНСЫ</a></li>
+              <li class="menu__list-item"><a href="#" class="menu__list-link">АРЕНДА или ПОКУПКА</a></li>
+              <li class="menu__list-item"><a href="contacts.html" class="menu__list-link menu__list-link--active">СВЯЗАТЬСЯ С НАМИ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="contacts">
+        <div class="container">
+          <h2 class="section-title contacts__title">Связаться с нами</h2>
+          <p class="contacts__text">Обращайтесь к нам с вопросами, потенциальным партнерством или запросами средств массовой информации.</p>
+          <form action="#" class="form">
+            <input type="text" id="name" class="form__input" placeholder="Имя" autocomplete="off">
+            <input type="email" id="email" class="form__input" placeholder="E-mail" autocomplete="off">
+            <textarea class="form__textarea" placeholder="Ваш текст"></textarea>
+            <button class="form__btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="blog">
+        <div class="container">
+          <div class="blog__items">
+            <a href="" class="blog__item">
+              <img src="images/blog-1.jpg" alt="" class="blog__item-img">
+              <h4 class="blog__item-title">Почему каршеринг - это хорошо?</h4>
+              <button class="blog__item-btn">читать</button>
+            </a>
+            <a href="" class="blog__item">
+              <img src="images/blog-2.jpg" alt="" class="blog__item-img">
+              <h4 class="blog__item-title">Поездки с домашними животными</h4>
+              <button class="blog__item-btn">читать</button>
+            </a>
+          </div>
+          <a class="show-link">показать больше</a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer__menu">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item"><p class="footer__menu-title">Товары</p></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Новинки</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Продать свою машину</a></li>
+          </ul>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item"><p class="footer__menu-title">Ресурсы</p></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Блог</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Часто задаваемые вопросы</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Связаться с нами</a></li>
+          </ul>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item"><p class="footer__menu-title">Работайте с TrueCar</p></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Дилеры</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Партнеры</a></li>
+          </ul>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item"><p class="footer__menu-title">Прочее</p></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">О нас</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Команда</a></li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu-link">Карьера</a></li>
+          </ul>
+        </nav>
+
+        <ul class="app">
+          <li class="app__item">
+            <a href="#" class="app__item-link">
+              <img src="images/appstore.svg" alt="" class="app__item-img">
+            </a>
+          </li>
+          <li class="app__item">
+            <a href="#" class="app__item-link">
+              <img src="images/googleplay.svg" alt="" class="app__item-img">
+            </a>
+          </li>
+        </ul>
+
+        <div class="footer__copy">
+          <p class="footer__copy-text">
+            По вопросам об услуге покупки автомобилей TrueCar звоните по телефону 1-888-878-3227. TrueCar обязывает сертифицированных дилеров выполнять определенные требования по обслуживанию клиентов и проходить программу сертификации дилеров TrueCar.
+          </p>
+          <p class="footer__copy-text">
+            TrueCar не занимается брокерской деятельностью, продажей и арендой автомобилей. Если не указано иное, все автомобили, представленные на этом сайте, предлагаются к продаже лицензированными дилерами автомобилей. Все автомобили подлежат предварительной продаже. Заходя на этот веб-сайт, вы соглашаетесь с Условиями обслуживания и Политикой конфиденциальности TrueCar.
+          </p>
+        </div>
+
+        <nav class="copy__nav">
+          <ul class="copy__nav-list">
+            <li class="copy__nav-item"><a href="#" class="copy__nav-link">Условия использования</a></li>
+            <li class="copy__nav-item"><a href="#" class="copy__nav-link">Политика конфиденциальности</a></li>
+            <li class="copy__nav-item"><a href="#" class="copy__nav-link">Не продавайте свою личную информацию</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
